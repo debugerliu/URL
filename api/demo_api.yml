@@ -1,0 +1,13 @@
+
+name: 查询书
+
+request:
+    url: http://coopmain.reader.qq.com/v6/nativepage/book/detail
+    method: GET
+    params:
+        bid: $name
+        pagestamp: 1
+validate:
+    - eq: ["status_code", 200]
+    - contains: [content, introinfo]
+

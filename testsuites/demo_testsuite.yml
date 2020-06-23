@@ -1,0 +1,11 @@
+
+config:
+    name: "demo testsuite"
+
+
+testcases:
+-
+    name: 查书
+    testcase: testcases/demo_testcase.yml
+    parameters:
+        name: ${P(data.csv)}

@@ -1,0 +1,9 @@
+
+config:
+    name: "demo testcase"
+
+
+teststeps:
+-
+    name: demo step 1
+    api: api/demo_api.yml
